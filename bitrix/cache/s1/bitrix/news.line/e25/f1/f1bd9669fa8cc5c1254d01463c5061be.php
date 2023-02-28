@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001677514130';
-$dateexpire = '001677514430';
+$datecreate = '001677579052';
+$dateexpire = '001677579352';
 $ser_content = 'a:2:{s:7:"CONTENT";s:656:"<div class="news-line">
 					<small id="bx_4665576_3"><span class="news-date-time">27.05.2010&nbsp;&nbsp;</span><a href="vodostoykoe%20soedinenie/">Получено прочное водостойкое соединение</a><br /></small>
 					<small id="bx_4665576_2"><span class="news-date-time">26.05.2010&nbsp;&nbsp;</span><a href="SALON%20DEL%20MOBILE/">Международная мебельная выставка SALON DEL MOBILE</a><br /></small>
