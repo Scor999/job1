@@ -3044,3 +3044,15 @@
 2023-02-21 21:57:43 -  - exec CUpdateClient::GetHTTPPage
 2023-02-21 21:57:43 -  - TIME GetUpdatesList(request) 0.164 sec
 2023-02-21 21:57:43 -  - exec CUpdateClient::ParseServerData
+2023-02-28 22:54:39 -  - exec CUpdateClient::GetUpdatesList
+2023-02-28 22:54:39 -  - exec CUpdateClient::CollectRequestData
+2023-02-28 22:54:39 -  - exec CUpdateClient::GetUpdatesList
+2023-02-28 22:54:39 -  - exec CUpdateClient::CollectRequestData
+2023-02-28 22:54:39 -  - LICENSE_KEY=X&lang=s1&SUPD_VER=22.500.0&VERSION=22.500.700&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=hv01-selivanov.study.mcart.ru&CHHB=hv01-selivanov.study.mcart.ru&CSAB=10.0.5.231&SUID=03eca434df6d219a7247b170314d6d40&CANGZIP=Y&CLIENT_PHPVER=7.4.33&stable=Y&mbfo=0&NGINX=Y&SMD=N&rerere=Y&bitm_main=22.500.700&bitm_photogallery=22.0.100&bitm_rest=22.400.0&bitm_socialservices=22.200.0&bitm_vote=22.300.0&bitm_mobileapp=22.100.100&bitm_ui=22.1100.100&bitm_location=22.400.0&bitm_bitrixcloud=22.100.0&bitm_iblock=22.300.200&bitm_landing=22.700.200&bitm_form=22.0.0&bitm_b24connector=22.0.0&bitm_security=21.200.200&bitm_blog=22.0.0&bitm_scale=21.0.0&bitm_perfmon=21.0.0&bitm_translate=22.200.0&bitm_fileman=22.300.0&bitm_forum=22.200.100&bitm_clouds=22.200.0&bitm_highloadblock=22.200.0&bitm_seo=22.200.300&bitm_search=22.100.0&bitm_subscribe=21.0.0&bitm_messageservice=22.600.0&bitl_ru=&bitl_en=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2023-02-28 22:54:39 -  - exec CUpdateClient::GetHTTPPage
+2023-02-28 22:54:39 -  - LICENSE_KEY=X&lang=s1&SUPD_VER=22.500.0&VERSION=22.500.700&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=hv01-selivanov.study.mcart.ru&CHHB=hv01-selivanov.study.mcart.ru&CSAB=10.0.5.231&SUID=03eca434df6d219a7247b170314d6d40&CANGZIP=Y&CLIENT_PHPVER=7.4.33&stable=Y&mbfo=0&NGINX=Y&SMD=N&rerere=Y&bitm_main=22.500.700&bitm_photogallery=22.0.100&bitm_rest=22.400.0&bitm_socialservices=22.200.0&bitm_vote=22.300.0&bitm_mobileapp=22.100.100&bitm_ui=22.1100.100&bitm_location=22.400.0&bitm_bitrixcloud=22.100.0&bitm_iblock=22.300.200&bitm_landing=22.700.200&bitm_form=22.0.0&bitm_b24connector=22.0.0&bitm_security=21.200.200&bitm_blog=22.0.0&bitm_scale=21.0.0&bitm_perfmon=21.0.0&bitm_translate=22.200.0&bitm_fileman=22.300.0&bitm_forum=22.200.100&bitm_clouds=22.200.0&bitm_highloadblock=22.200.0&bitm_seo=22.200.300&bitm_search=22.100.0&bitm_subscribe=21.0.0&bitm_messageservice=22.600.0&bitl_ru=&bitl_en=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2023-02-28 22:54:39 -  - exec CUpdateClient::GetHTTPPage
+2023-02-28 22:54:39 -  - TIME GetUpdatesList(request) 0.148 sec
+2023-02-28 22:54:39 -  - exec CUpdateClient::ParseServerData
+2023-02-28 22:54:39 -  - TIME GetUpdatesList(request) 0.156 sec
+2023-02-28 22:54:39 -  - exec CUpdateClient::ParseServerData

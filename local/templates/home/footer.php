@@ -1,5 +1,5 @@
 <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-          <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+          <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/images/img_3.jpg" alt="Image" class="img-fluid"></a>
           <div class="p-4 bg-white">
             <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
             <h2 class="h5 text-black mb-3"><a href="#">When To Sell &amp; How Much To Sell?</a></h2>
@@ -30,7 +30,7 @@
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="row mb-5">
             <div class="col-md-12">
-              <h3 class="footer-heading mb-4">Navigations</h3>
+              <h3 class="footer-heading mb-4"><?=GetMessage('Навигация')?></h3>
             </div>
             <div class="col-md-6 col-lg-6">
               <ul class="list-unstyled">

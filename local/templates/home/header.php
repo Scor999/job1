@@ -3,38 +3,40 @@
 IncludeTemplateLangFile(__FILE__);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <title><?$APPLICATION->ShowTitle()?></title>
   <?$APPLICATION->ShowHead();?>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet"
+  
+  <link rel="shortcut icon" type="image x-icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico">
+  
+  <link rel="stylesheet" 
     href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
 
     <?
 // для css-файлов
-$APPLICATION->SetAdditionalCSS("fonts/icomoon/style.css");
-$APPLICATION->SetAdditionalCSS("css/bootstrap.min.css");
-$APPLICATION->SetAdditionalCSS("css/magnific-popup.css");
-$APPLICATION->SetAdditionalCSS("css/jquery-ui.css");
-$APPLICATION->SetAdditionalCSS("css/owl.carousel.min.css");
-$APPLICATION->SetAdditionalCSS("css/owl.theme.default.min.css");
-$APPLICATION->SetAdditionalCSS("css/bootstrap-datepicker.css");
-$APPLICATION->SetAdditionalCSS("css/mediaelementplayer.css");
-$APPLICATION->SetAdditionalCSS("css/animate.css");
-$APPLICATION->SetAdditionalCSS("fonts/flaticon/font/flaticon.css");
-$APPLICATION->SetAdditionalCSS("css/fl-bigmug-line.css");
-$APPLICATION->SetAdditionalCSS("css/aos.css");
-$APPLICATION->SetAdditionalCSS("css/style.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/fonts/icomoon/style.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/bootstrap.min.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/magnific-popup.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/jquery-ui.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/owl.carousel.min.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/owl.theme.default.min.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/bootstrap-datepicker.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/mediaelementplayer.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/animate.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/fonts/flaticon/font/flaticon.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/fl-bigmug-line.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/aos.css");
+$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/style.css");
 
 ?>
  
 </head>
 
 <body>
-
+<?$APPLICATION->ShowPanel();?>
   <div class="site-loader"></div>
 
   <div class="site-wrap">
@@ -72,7 +74,7 @@ $APPLICATION->SetAdditionalCSS("css/style.css");
       <div class="container py-1">
         <div class="row align-items-center">
           <div class="col-8 col-md-8 col-lg-4">
-            <h1 class=""><a href="index.html" class="h5 text-uppercase text-black"><strong>HomeSpace<span
+            <h1 class=""><a href="index.html" class="h5 text-uppercase text-black"><strong><?=GetMessage('ДОМАШНЕЕ ПРОСТРАНСТВО')?><span
                     class="text-danger">.</span></strong></a></h1>
           </div>
           <div class="col-4 col-md-4 col-lg-8">
@@ -197,7 +199,7 @@ $APPLICATION->SetAdditionalCSS("css/style.css");
         <div class="col-md-6 col-lg-4 mb-4">
           <a href="property-details.html" class="prop-entry d-block">
             <figure>
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+              <img src="<?=SITE_TEMPLATE_PATH?>/images/img_1.jpg" alt="Image" class="img-fluid">
             </figure>
             <div class="prop-text">
               <div class="inner">
@@ -231,7 +233,7 @@ $APPLICATION->SetAdditionalCSS("css/style.css");
         <div class="col-md-6 col-lg-4 mb-4">
           <a href="property-details.html" class="prop-entry d-block">
             <figure>
-              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+              <img src="<?=SITE_TEMPLATE_PATH?>/images/img_2.jpg" alt="Image" class="img-fluid">
             </figure>
             <div class="prop-text">
               <div class="inner">
@@ -265,7 +267,7 @@ $APPLICATION->SetAdditionalCSS("css/style.css");
         <div class="col-md-6 col-lg-4 mb-4">
           <a href="property-details.html" class="prop-entry d-block">
             <figure>
-              <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+              <img src="<?=SITE_TEMPLATE_PATH?>/images/img_3.jpg" alt="Image" class="img-fluid">
             </figure>
             <div class="prop-text">
               <div class="inner">
@@ -300,7 +302,7 @@ $APPLICATION->SetAdditionalCSS("css/style.css");
         <div class="col-md-6 col-lg-4 mb-4">
           <a href="property-details.html" class="prop-entry d-block">
             <figure>
-              <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+              <img src="<?=SITE_TEMPLATE_PATH?>/images/img_4.jpg" alt="Image" class="img-fluid">
             </figure>
             <div class="prop-text">
               <div class="inner">
@@ -334,7 +336,7 @@ $APPLICATION->SetAdditionalCSS("css/style.css");
         <div class="col-md-6 col-lg-4 mb-4">
           <a href="property-details.html" class="prop-entry d-block">
             <figure>
-              <img src="images/img_5.jpg" alt="Image" class="img-fluid">
+              <img src="<?=SITE_TEMPLATE_PATH?>/images/img_5.jpg" alt="Image" class="img-fluid">
             </figure>
             <div class="prop-text">
               <div class="inner">
@@ -368,7 +370,7 @@ $APPLICATION->SetAdditionalCSS("css/style.css");
         <div class="col-md-6 col-lg-4 mb-4">
           <a href="property-details.html" class="prop-entry d-block">
             <figure>
-              <img src="images/img_6.jpg" alt="Image" class="img-fluid">
+              <img src="<?=SITE_TEMPLATE_PATH?>/images/img_6.jpg" alt="Image" class="img-fluid">
             </figure>
             <div class="prop-text">
               <div class="inner">
@@ -474,7 +476,7 @@ $APPLICATION->SetAdditionalCSS("css/style.css");
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-          <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
+          <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/images/img_4.jpg" alt="Image" class="img-fluid"></a>
           <div class="p-4 bg-white">
             <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
             <h2 class="h5 text-black mb-3"><a href="#">When To Sell &amp; How Much To Sell?</a></h2>
@@ -483,7 +485,7 @@ $APPLICATION->SetAdditionalCSS("css/style.css");
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-          <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+          <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/images/img_2.jpg" alt="Image" class="img-fluid"></a>
           <div class="p-4 bg-white">
             <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
             <h2 class="h5 text-black mb-3"><a href="#">When To Sell &amp; How Much To Sell?</a></h2>
