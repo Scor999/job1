@@ -3,7 +3,7 @@
 IncludeTemplateLangFile(__FILE__);
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang=”<?=LANGUAGE_ID;?>-<?=strtoupper(LANGUAGE_ID);?>”>
 
 <head>
   <title><?$APPLICATION->ShowTitle()?></title>
@@ -15,7 +15,7 @@ IncludeTemplateLangFile(__FILE__);
   <link rel="stylesheet" 
     href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
 
-    <?
+<?
 // для css-файлов
 $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/fonts/icomoon/style.css");
 $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/bootstrap.min.css");
@@ -31,6 +31,21 @@ $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/fl-bigmug-line.css");
 $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/aos.css");
 $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/style.css");
 
+use Bitrix\Main\Page\Asset;
+
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-3.3.1.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-migrate-3.0.1.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-ui.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/popper.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/owl.carousel.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/mediaelement-and-player.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.stellar.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.countdown.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.magnific-popup.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap-datepicker.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/aos.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/main.js");
 ?>
  
 </head>
@@ -74,7 +89,7 @@ $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/style.css");
       <div class="container py-1">
         <div class="row align-items-center">
           <div class="col-8 col-md-8 col-lg-4">
-            <h1 class=""><a href="index.html" class="h5 text-uppercase text-black"><strong><?=GetMessage('ДОМАШНЕЕ ПРОСТРАНСТВО')?><span
+            <h1 class=""><a href="index.html" class="h5 text-uppercase text-black"><strong><?= GetMessage('HOMESPASE.')?><span
                     class="text-danger">.</span></strong></a></h1>
           </div>
           <div class="col-4 col-md-4 col-lg-8">
@@ -85,7 +100,7 @@ $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/style.css");
 
               <ul class="site-menu js-clone-nav d-none d-lg-block">
                 <li class="active">
-                  <a href="index.html">Home</a>
+                  <a href="index.html"><?= GetMessage('Home')?></a>
                 </li>
                 <li class="has-children">
                   <a href="properties.html">Properties</a>
@@ -118,7 +133,7 @@ $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH ."/css/style.css");
 
   <div class="slide-one-item home-slider owl-carousel">
 
-    <div class="site-blocks-cover" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade"
+    <div class="site-blocks-cover" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/hero_bg_1.jpg);" data-aos="fade"
       data-stellar-background-ratio="0.5">
 
       <div class="text">
