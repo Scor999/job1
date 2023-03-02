@@ -1,4 +1,7 @@
 <?
+$PERM["/"]["8"]="W";
+$PERM["/"]["5"]="W";
+$PERM["/"]["*"]="R";
 $PERM["local"]["8"]="W";
 $PERM["local"]["5"]="W";
 $PERM["news"]["8"]="W";
@@ -23,5 +26,4 @@ $PERM["products"]["5"]="W";
 $PERM["contacts"]["5"]="W";
 $PERM["company"]["5"]="W";
 $PERM["index.php"]["5"]="W";
-$PERM["/"]["*"]="R";
 ?>
