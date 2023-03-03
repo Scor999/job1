@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001677773430';
-$dateexpire = '001677773730';
+$datecreate = '001677825698';
+$dateexpire = '001677825998';
 $ser_content = 'a:2:{s:7:"CONTENT";s:833:"<div class="news-line">
 					<small id="bx_4665576_39"><span class="news-date-time">02.03.2023&nbsp;&nbsp;</span><a href="/advertisement/detail.php?ID=obyavlenie/">Объявление</a><br /></small>
 					<small id="bx_4665576_36"><span class="news-date-time">02.03.2023&nbsp;&nbsp;</span><a href="/advertisement/detail.php?ID=obyavlenie-test-3/">Объявление тест 3</a><br /></small>
