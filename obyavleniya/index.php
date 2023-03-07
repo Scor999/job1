@@ -1,10 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Объявления");
-?>Объявления<br>
-<?$APPLICATION->IncludeComponent(
+?><?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
-	".default", 
+	"template3", 
 	array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -30,8 +29,14 @@ $APPLICATION->SetTitle("Объявления");
 		"DETAIL_PAGER_TEMPLATE" => "",
 		"DETAIL_PAGER_TITLE" => "Страница",
 		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "ATT_GARAGE",
+			1 => "ATT_SOURCE",
+			2 => "ATT_BAFROOMS",
+			3 => "ATT_FLOORS",
+			4 => "ATT_SQUARE",
+			5 => "ATT_DEAL",
+			6 => "ATT_PRICE",
+			7 => "",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
@@ -50,22 +55,27 @@ $APPLICATION->SetTitle("Объявления");
 			1 => "",
 		),
 		"LIST_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "ATT_GARAGE",
+			1 => "ATT_SOURCE",
+			2 => "ATT_BAFROOMS",
+			3 => "ATT_FLOORS",
+			4 => "ATT_SQUARE",
+			5 => "ATT_DEAL",
+			6 => "ATT_PRICE",
+			7 => "",
 		),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
-		"NEWS_COUNT" => "10",
+		"NEWS_COUNT" => "3",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TEMPLATE" => "pager",
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"SEF_FOLDER" => "/obyavleniya/",
 		"SEF_MODE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
@@ -84,7 +94,8 @@ $APPLICATION->SetTitle("Объявления");
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
-		"COMPONENT_TEMPLATE" => ".default",
+		"COMPONENT_TEMPLATE" => "template3",
+		"SEF_FOLDER" => "/obyavleniya/",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
@@ -92,4 +103,8 @@ $APPLICATION->SetTitle("Объявления");
 		)
 	),
 	false
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+<h2></h2>
+<h2></h2>
+<h2 style="text-align: center;"> </h2>
+<h2></h2><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

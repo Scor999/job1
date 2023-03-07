@@ -10,43 +10,40 @@ IncludeTemplateLangFile(__FILE__);
   <title><? $APPLICATION->ShowTitle() ?></title>
   <? $APPLICATION->ShowHead(); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  
-
   <?
   use Bitrix\Main\Page\Asset;
   // для css-файлов
   Asset::getInstance()->addString('<link rel="shortcut icon" type="image x-icon" href="/favicon.ico">');
   Asset::getInstance()->addString('<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">');
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/fonts/icomoon/style.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/bootstrap.min.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/magnific-popup.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/jquery-ui.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/owl.carousel.min.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/owl.theme.default.min.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/bootstrap-datepicker.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/mediaelementplayer.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/animate.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/fonts/flaticon/font/flaticon.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/fl-bigmug-line.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/aos.css");
-  Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
+  Asset::getInstance()->addCss("/local/templates/.default/fonts/icomoon/style.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/bootstrap.min.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/magnific-popup.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/jquery-ui.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/owl.carousel.min.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/owl.theme.default.min.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/bootstrap-datepicker.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/mediaelementplayer.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/animate.css");
+  Asset::getInstance()->addCss("/local/templates/.default/fonts/flaticon/font/flaticon.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/fl-bigmug-line.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/aos.css");
+  Asset::getInstance()->addCss("/local/templates/.default/css/style.css");
 
   
 
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-3.3.1.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-migrate-3.0.1.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-ui.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/popper.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/owl.carousel.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/mediaelement-and-player.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.stellar.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.countdown.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.magnific-popup.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap-datepicker.min.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/aos.js");
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/main.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/jquery-3.3.1.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/jquery-migrate-3.0.1.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/jquery-ui.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/popper.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/bootstrap.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/owl.carousel.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/mediaelement-and-player.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/jquery.stellar.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/jquery.countdown.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/jquery.magnific-popup.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/bootstrap-datepicker.min.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/aos.js");
+  Asset::getInstance()->addJs("/local/templates/.default/js/main.js");
   ?>
 
 </head>
@@ -65,35 +62,34 @@ IncludeTemplateLangFile(__FILE__);
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-
+</div>
     <div class="border-bottom bg-white top-bar">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-6 col-md-6">
             <p class="mb-0">
               <? $APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                array(
-                  "AREA_FILE_SHOW" => "file",
-                  "AREA_FILE_SUFFIX" => "inc",
-                  "EDIT_TEMPLATE" => "",
-                  "PATH" => "/local/templates/home/include/phone.php"
-                )
-              ); ?>
-            <p>
-            </p>
-            <p>
-            </p>
-            <? $APPLICATION->IncludeComponent(
 	"bitrix:main.include", 
-	".default", 
+	"template1", 
 	array(
 		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "standard.php",
-		"PATH" => "/local/templates/home/include/email.php",
-		"COMPONENT_TEMPLATE" => ".default"
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/local/templates/.default/include/phone.php",
+		"COMPONENT_TEMPLATE" => "template1"
+	),
+	false
+); ?>
+
+            <? $APPLICATION->IncludeComponent(
+	"bitrix:main.include", 
+	"template1", 
+	array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/local/templates/.default/include/email.php",
+		"COMPONENT_TEMPLATE" => "template1"
 	),
 	false
 ); ?>
@@ -101,15 +97,17 @@ IncludeTemplateLangFile(__FILE__);
           </div>
           <div class="col-6 col-md-6 text-right">
             <? $APPLICATION->IncludeComponent(
-              "bitrix:main.include",
-              "",
-              array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "/local/templates/home/include/linksociale.php"
-              )
-            ); ?>
+	"bitrix:main.include", 
+	"template1", 
+	array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/local/templates/.default/include/linksociale.php",
+		"COMPONENT_TEMPLATE" => "template1"
+	),
+	false
+); ?>
           </div>
         </div>
       </div>
@@ -126,7 +124,7 @@ IncludeTemplateLangFile(__FILE__);
                 "AREA_FILE_SHOW" => "file",
                 "AREA_FILE_SUFFIX" => "inc",
                 "EDIT_TEMPLATE" => "",
-                "PATH" => "local/templates/home/include/logo.php"
+                "PATH" => "/local/templates/.default/include/logo.php"
               )
             ); ?>
               <p>
@@ -137,20 +135,21 @@ IncludeTemplateLangFile(__FILE__);
           <div class="col-4 col-md-4 col-lg-8">
             <? $APPLICATION->IncludeComponent(
 	"bitrix:menu", 
-	".default", 
+	"top_multi", 
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "top",
+		"CHILD_MENU_TYPE" => "left",
 		"DELAY" => "N",
-		"MAX_LEVEL" => "1",
+		"MAX_LEVEL" => "4",
 		"MENU_CACHE_GET_VARS" => array(
 		),
 		"MENU_CACHE_TIME" => "36000",
 		"MENU_CACHE_TYPE" => "A",
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => ".default"
+		"USE_EXT" => "Y",
+		"COMPONENT_TEMPLATE" => "top_multi",
+		"MENU_THEME" => "site"
 	),
 	false
 ); ?>
@@ -175,14 +174,16 @@ IncludeTemplateLangFile(__FILE__);
           <div class="col-md-10">
             <h1 class="mb-2"><? $APPLICATION->ShowTitle(false) ?></h1>
             <? $APPLICATION->IncludeComponent(
-              "bitrix:breadcrumb",
-              "nav-breadcrumb",
-              array(
-                "PATH" => "",
-                "SITE_ID" => "s1",
-                "START_FROM" => "0"
-              )
-            ); ?>
+	"bitrix:breadcrumb", 
+	"nav", 
+	array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0",
+		"COMPONENT_TEMPLATE" => "nav"
+	),
+	false
+); ?>
           </div>
         </div>
       </div>

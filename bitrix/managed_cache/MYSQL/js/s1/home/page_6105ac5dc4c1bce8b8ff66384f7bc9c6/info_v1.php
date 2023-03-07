@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/templates/.default/js/jquery.min.js" => "167802951093868","/bitrix/templates/.default/js/jquery.fancybox-1.3.4.pack.js" => "167802951015624",]; ?>

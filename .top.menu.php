@@ -34,6 +34,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Войти", 
+		"/User/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>

@@ -7,15 +7,17 @@
             <div class="col-lg-4">
                 <div class="mb-5">
                     <?$APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        Array(
-                            "AREA_FILE_SHOW" => "file",
-                            "AREA_FILE_SUFFIX" => "inc",
-                            "EDIT_TEMPLATE" => "",
-                            "PATH" => "local/templates/home/include/ABOUT HOMESPACE.php"
-                        )
-                    );?>
+	"bitrix:main.include", 
+	"template1", 
+	array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/local/templates/.default/include/ABOUT HOMESPACE.php",
+		"COMPONENT_TEMPLATE" => "top_multi"
+	),
+	false
+);?>
                 </div>
 
 
@@ -30,7 +32,7 @@
                     <div class="col-md-6 col-lg-6">
                         <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
-	"store_v3_bottom", 
+	"top_multi", 
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "top",
@@ -43,7 +45,7 @@
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "top",
 		"USE_EXT" => "Y",
-		"COMPONENT_TEMPLATE" => "store_v3_bottom"
+		"COMPONENT_TEMPLATE" => "top_multi"
 	),
 	false
 );?>
@@ -59,7 +61,7 @@
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "local/templates/home/include/socialfooter.php"
+                        "PATH" => "/local/templates/.default/include/socialfooter.php"
                     )
                 );?>
             </div>
@@ -74,7 +76,7 @@
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "local/templates/home/include/Copyright.php"
+                        "PATH" => "/local/templates/.default/include/Copyright.php"
                     )
                 );?>
             </div>
