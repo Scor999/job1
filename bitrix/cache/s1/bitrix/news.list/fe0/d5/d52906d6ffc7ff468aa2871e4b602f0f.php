@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001678122742';
-$dateexpire = '001714122742';
+$datecreate = '001678215173';
+$dateexpire = '001714215173';
 $ser_content = 'a:2:{s:7:"CONTENT";s:4845:"<div class="row mb-5">
         <div class="col-md-6 col-lg-4 mb-4" id="bx_3218110189_46">
         <a href="/obyavleniya/obyavlenie-test-5/" class="prop-entry d-block">

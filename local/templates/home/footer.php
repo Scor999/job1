@@ -13,8 +13,8 @@
 		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
 		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/templates/.default/include/ABOUT HOMESPACE.php",
-		"COMPONENT_TEMPLATE" => "top_multi"
+		"PATH" => "/local/templates/home/include/ABOUT HOMESPACE.php",
+		"COMPONENT_TEMPLATE" => "template1"
 	),
 	false
 );?>
@@ -30,22 +30,18 @@
                     </div>
 
                     <div class="col-md-6 col-lg-6">
-                        <?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"top_multi", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "top",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "1",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "36000",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "Y",
-		"COMPONENT_TEMPLATE" => "top_multi"
+                        <?$APPLICATION->IncludeComponent("bitrix:menu", "vertical_footer_menu", Array(
+	"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+		"CHILD_MENU_TYPE" => "top",	// Тип меню для остальных уровней
+		"DELAY" => "N",	// Откладывать выполнение шаблона меню
+		"MAX_LEVEL" => "1",	// Уровень вложенности меню
+		"MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
+		"MENU_CACHE_TIME" => "36000",	// Время кеширования (сек.)
+		"MENU_CACHE_TYPE" => "A",	// Тип кеширования
+		"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+		"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+		"USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+		"COMPONENT_TEMPLATE" => "vertical_multilevel"
 	),
 	false
 );?>
@@ -61,7 +57,7 @@
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/local/templates/.default/include/socialfooter.php"
+                        "PATH" => "/local/templates/home/include/socialfooter.php"
                     )
                 );?>
             </div>
@@ -76,7 +72,7 @@
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/local/templates/.default/include/Copyright.php"
+                        "PATH" =>"/local/templates/home/include/Copyright.php"
                     )
                 );?>
             </div>
@@ -84,7 +80,6 @@
         </div>
     </div>
 </footer>
-
 </div>
 </body>
 
