@@ -1,5 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-<? dump($arResult, false, true)>
+
 /** @var array $arParams */
 /** @var array $arResult */
 /** @global CMain $APPLICATION */
@@ -52,7 +52,7 @@ $this->setFrameMode(true);
                             <ul class="property-specs-wrap mb-3 mb-lg-0  float-lg-right">
                                 <li>
                                     <span class="property-specs">Количество санузлов</span>
-                                    <span class="property-specs-number"><?=$arResult['DISPLAY_PROPERTIES']['ATT_BAFROOMS']['VALUE']?: 'нет'</span>
+                                    <span class="property-specs-number"><?=$arResult['DISPLAY_PROPERTIES']['ATT_BAFROOMS']['VALUE']?: 'нет'?></span>
                                 </li>
                                 <li>
                                     <span class="property-specs">Наличие гаража</span>
@@ -82,8 +82,8 @@ $this->setFrameMode(true);
                         <div class="col-12">
                             <h2 class="h4 text-black mb-3">Property Gallery</h2>
                         </div>
-                            <?if ($arResult['DISPLAY_PROPERTIES']['ATT_GALLERY'] && !$arResult['DISPLAY_PROPERTIES']['ATT_GALLERY']['ID']):?>
-                                <? foreach ($arResult['DETAIL_PICTURE']['ATT_GALLERY']['FILE_VALUE'] as $photo):?>
+                                    <?if ($arResult['DISPLAY_PROPERTIES']['ATT_GALLERY'] && !$arResult['DISPLAY_PROPERTIES']['ATT_GALLERY']['ID']):?>
+                                <? foreach ($arResult['DISPLAY_PROPERTIES']['ATT_GALLERY']['FILE_VALUE'] as $photo):?>
                                     <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                                         <a href="<?=$photo['SRC']?>" class="image-popup gal-item"><img src="<?=$photo['SRC']?>" alt="Image" class="img-fluid"></a>
                                     </div>

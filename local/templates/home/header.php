@@ -3,14 +3,7 @@
 <?
 IncludeTemplateLangFile(__FILE__);
 ?>
-<!DOCTYPE html>
-<html lang="<?= LANGUAGE_ID ?>">
-
-<head>
-  <title><? $APPLICATION->ShowTitle() ?></title>
-  <? $APPLICATION->ShowHead(); ?>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <?
+<?
   use Bitrix\Main\Page\Asset;
   // для css-файлов
   Asset::getInstance()->addString('<link rel="shortcut icon" type="image x-icon" href="/favicon.ico">');
@@ -29,7 +22,7 @@ IncludeTemplateLangFile(__FILE__);
   Asset::getInstance()->addCss(SITE_TEMPLATE_PATH ."/css/aos.css");
   Asset::getInstance()->addCss(SITE_TEMPLATE_PATH ."/css/style.css");
 
-  
+
 
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH ."/js/jquery-3.3.1.min.js");
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH ."/js/jquery-migrate-3.0.1.min.js");
@@ -45,79 +38,96 @@ IncludeTemplateLangFile(__FILE__);
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH ."/js/aos.js");
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH ."/js/main.js");
   ?>
-
+<!DOCTYPE html>
+<html lang="<?= LANGUAGE_ID ?>">
+<head>
+    <title><?$APPLICATION->ShowTitle()?></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <?$APPLICATION->ShowHead();?>
+    <link rel="stylesheet" href="/local/templates/home/template_style.css">
 </head>
 
 <body>
-<div id="panel"><?$APPLICATION->ShowPanel();?></div>
-  <div class="site-loader"></div>
+<?$APPLICATION->ShowPanel();?>
+<div class="site-loader"></div>
 
-  <div class="site-wrap">
+<div class="site-wrap">
 
     <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
+        <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-</div>
-    <div class="border-bottom bg-white top-bar">
+
+     <div class="border-bottom bg-white top-bar">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-6 col-md-6">
             <p class="mb-0">
-              <? $APPLICATION->IncludeComponent(
-	"bitrix:main.include", 
-	"template1", 
-	array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/include/phone.php",
-		"COMPONENT_TEMPLATE" => "template1"
-	),
-	false
-); ?>
-
-            <? $APPLICATION->IncludeComponent(
-	"bitrix:main.include", 
-	"template1", 
-	array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/templates/home/include/email.php",
-		"COMPONENT_TEMPLATE" => "template1"
-	),
-	false
-); ?>
-            </p>
+				<div class="d-none d-md-inline-block ml-2">
+                        <? $APPLICATION->IncludeComponent(
+	                        "bitrix:main.include",
+	                        "",
+	                        array(
+		                           "AREA_FILE_SHOW" => "file",
+		                           "AREA_FILE_SUFFIX" => "inc",
+		                           "EDIT_TEMPLATE" => "",
+		                           "PATH" => "/local/templates/home/include/phone.php",
+		                           ),
+	                    ); ?>
+                             </div>
+				<div class="d-none d-md-inline-block ml-2">
+					   <? $APPLICATION->IncludeComponent(
+                               "bitrix:main.include",
+                               "",
+                               array(
+                                       "AREA_FILE_SHOW" => "file",
+                                       "AREA_FILE_SUFFIX" => "inc",
+                                       "EDIT_TEMPLATE" => "",
+                                       "PATH" => "/local/templates/home/include/email.php",
+                                        ),
+                            ); ?>
+						</p>
+				</div>
           </div>
           <div class="col-6 col-md-6 text-right">
-            <? $APPLICATION->IncludeComponent(
-	"bitrix:main.include", 
-	"template1", 
-	array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/templates/home/include/linksociale.php",
-		"COMPONENT_TEMPLATE" => "template1"
-	),
-	false
-); ?>
+					  <? $APPLICATION->IncludeComponent(
+	             "bitrix:main.include",
+                 "",
+	             array(
+		                "AREA_FILE_SHOW" => "file",
+	                    "AREA_FILE_SUFFIX" => "inc",
+		                "EDIT_TEMPLATE" => "",
+	                    "PATH" => "/local/templates/home/include/linksociale.php",
+	                                                            	),
+	         ); ?>
+			</div>
           </div>
+<? if (!$GLOBALS['USER']->IsAuthorized()): ?>
+          <div class="row flex-row-reverse"><a class="btn btn-sm" href="/auth">Войти</a></div>
+        <? else: ?>
+          <div class="row flex-row-reverse"><a class="btn btn-sm" href="<? echo $APPLICATION->GetCurPageParam(
+            "logout=yes&" . bitrix_sessid_get(),
+            array(
+              "login",
+              "logout",
+              "register",
+              "forgot_password",
+              "change_password"
+            )
+          ); ?>">Выйти</a></div>
+        <? endif; ?>
         </div>
       </div>
-
-    </div>
-    <div class="site-navbar">
+	 <div class="site-navbar">
       <div class="container py-1">
         <div class="row align-items-center">
           <div class="col-8 col-md-8 col-lg-4">
-            <h1 <? $APPLICATION->IncludeComponent(
+            <? $APPLICATION->IncludeComponent(
               "bitrix:main.include",
               "",
               array(
@@ -127,63 +137,54 @@ IncludeTemplateLangFile(__FILE__);
                 "PATH" =>"/local/templates/home/include/logo.php"
               )
             ); ?>
-              <p>
-              </p>
-              <p>
-              </p><span </h1>
           </div>
-          <div class="col-4 col-md-4 col-lg-8">
+    <div class="col-4 col-md-4 col-lg-8">
             <? $APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"top_multi", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "left",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "3",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "36000",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => "top_multi",
-		"MENU_THEME" => "site"
-	),
-	false
-); ?>
-            <p>
-            </p>
-            <p>
-            </p>
-          </div>
-
-
+	            "bitrix:menu",
+	            "top_multi",
+	             array(
+		               "ALLOW_MULTI_SELECT" => "N",
+		               "CHILD_MENU_TYPE" => "left",
+		               "DELAY" => "N",
+		               "MAX_LEVEL" => "3",
+		               "MENU_CACHE_GET_VARS" => array(
+		                ),
+		                "MENU_CACHE_TIME" => "36000",
+		                "MENU_CACHE_TYPE" => "A",
+                        "MENU_CACHE_USE_GROUPS" => "Y",
+                        "ROOT_MENU_TYPE" => "top",
+                        "USE_EXT" => "N",
+                        "COMPONENT_TEMPLATE" => "top_multi",
+                        "MENU_THEME" => "site"
+	                    ),
+	            false
+                ); ?>
+           </div>
         </div>
       </div>
     </div>
   </div>
 
   <? if ($APPLICATION->GetCurPage(false) !== '/'): ?>
-    <div class="site-blocks-cover inner-page-cover overlay"
-      style="background-image: url(/local/templates/home/images/hero_bg_2.jpg);" data-aos="fade"
-      data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(/local/templates/home/images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-md-10">
             <h1 class="mb-2"><? $APPLICATION->ShowTitle(false) ?></h1>
             <? $APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb", 
-	"nav", 
-	array(
-		"PATH" => "",
-		"SITE_ID" => "s1",
-		"START_FROM" => "0",
-		"COMPONENT_TEMPLATE" => "nav"
-	),
-	false
-); ?>
+            "bitrix:breadcrumb",
+            "nav",
+                    array(
+                            "PATH" => "",
+                            "SITE_ID" => "s1",
+                            "START_FROM" => "0",
+                            "COMPONENT_TEMPLATE" => "nav"
+	                        ),
+                            false,
+                            array(
+                            "ACTIVE_COMPONENT" => "Y"
+                            )
+                        ); ?>
           </div>
         </div>
       </div>

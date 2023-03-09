@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001678265967';
-$dateexpire = '001678266267';
-$ser_content = 'a:2:{s:7:"CONTENT";s:3224:"
+$datecreate = '001678371387';
+$dateexpire = '001678371687';
+$ser_content = 'a:2:{s:7:"CONTENT";s:3312:"
 <div class="site-section bg-light">
   <div class="container">
     <div class="row justify-content-center mb-5">
@@ -17,15 +17,15 @@ $ser_content = 'a:2:{s:7:"CONTENT";s:3224:"
               
         <div id="bx_3997782468_47" class="col-md-6 col-lg-4 mb-5" data-aos="fade-up"
           data-aos-delay="100">
-          <a href="/news/47/"><img src="/upload/iblock/e90/3dtsr1hahqyqd14n3l43scv46w991sjh.jpg" alt="Image"
+          <a href="/news/47/obyavlenie%20dom%20po%20sutochno222/"><img src="/upload/iblock/e90/3dtsr1hahqyqd14n3l43scv46w991sjh.jpg" alt="Image"
               class="img-fluid"></a>
           <div class="p-4 bg-white">
             <span class="d-block text-secondary small text-uppercase">
               07.03.2023            </span>
-            <h2 class="h5 text-black mb-3"><a href="/news/47/">
+            <h2 class="h5 text-black mb-3"><a href="/news/47/obyavlenie%20dom%20po%20sutochno222/">
                 Объявление дом по суточно222              </a></h2>
             <p>
-                          </p>
+              ПРОВЕРКА            </p>
           </div>
         </div>
               

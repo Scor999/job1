@@ -88,4 +88,6 @@ $APPLICATION->SetTitle("Вакансии");
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N"
 	)
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+</div>
+</div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

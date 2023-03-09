@@ -1,0 +1,18 @@
+
+
+/* Start:/bitrix/components/bitrix/system.auth.registration/templates/.default/style.min.css?1676371271426*/
+div.bx-auth input.bx-auth-input{vertical-align:middle}div.bx-auth span.bx-auth-secure{background-color:#fffae3;border:1px solid #dedbc8;padding:2px;display:inline-block;vertical-align:middle}div.bx-auth div.bx-auth-secure-icon{background-image:url(/bitrix/components/bitrix/system.auth.registration/templates/.default/images/sec.png);background-repeat:no-repeat;background-position:center;width:19px;height:18px}div.bx-auth div.bx-auth-secure-unlock{background-image:url(/bitrix/components/bitrix/system.auth.registration/templates/.default/images/sec-unlocked.png)}
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/system.show_message/templates/.default/style.min.css?167637127151*/
+font.errortext{color:red}font.notetext{color:green}
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/main.field.enum/templates/main.edit/style.min.css?1676371271640*/
+.main-enum-dialog-input{padding:3px 32px 3px 3px;height:auto;min-height:38px;  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI1IDE2Ij4gIDxwb2x5Z29uIGZpbGw9IiM1MzVDNjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgcG9pbnRzPSIzLjU0NiA3LjQyNSAzLjU0NiAxLjYwNyAxLjYwNyAxLjYwNyAxLjYwNyA4LjM5NCAxLjYwNyA5LjM2NCA5LjM2NCA5LjM2NCA5LjM2NCA3LjQyNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDkuOSAxLjY1NykiLz48L3N2Zz4=); background-repeat:no-repeat;background-position:right center;color:#535c69;box-sizing:border-box;-moz-appearance:none;-webkit-appearance:none;appearance:none}
+/* End */
+/* /bitrix/components/bitrix/system.auth.registration/templates/.default/style.min.css?1676371271426 */
+/* /bitrix/components/bitrix/system.show_message/templates/.default/style.min.css?167637127151 */
+/* /bitrix/components/bitrix/main.field.enum/templates/main.edit/style.min.css?1676371271640 */

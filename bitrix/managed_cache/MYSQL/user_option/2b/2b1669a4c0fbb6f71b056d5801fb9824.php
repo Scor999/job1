@@ -1,22 +1,20 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001678131468';
-$dateexpire = '001678135068';
-$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{s:5:"count";i:1;s:6:"query1";s:347:"if(CModule::IncludeModule("iblock"))
+$datecreate = '001678268335';
+$dateexpire = '001678271935';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{s:5:"count";i:1;s:6:"query1";s:509:"if(CModule::IncludeModule("iblock"))
 {
-$arFilter = ["IBLOCK_ID" => 5, "PROPERTY_ATT_GARAGE_VALUE" => "Да"];
-$res = CIBlockElement::GetList(Array(), $arFilter, false);
+//ID, Название, ID инфоблока, свойство - цена, приоритетная сделка, гараж.
+$selectedFields = ["ID", "NAME", "IBLOCK_ID", "PROPERTY_ATT_PRICE", "PROPERTY_ATT_DEAL"];
+$arFilter = ["IBLOCK_ID" => 5, "ACTIVE"=>"Y", "PROPERTY_ATT_GARAGE_VALUE" => "да"];
+$res = CIBlockElement::GetList([], $arFilter, false, false, $selectedFields);
+$resArr = [];
 
-while($ob = $res->GetNextElement())
-{
-$arFields = $ob->GetFields();
-
-echo $arFields[\'ID\'];
-echo "</br>";
-echo $arFields[\'CODE\'];
-echo "</br>";
-	//var_dump($res->Fetch());
+while($item = $res->fetch()) {
+$resArr[] = $item;
 }
-};  ";}}';
+
+print_r($resArr);
+}  ";}}';
 return true;
 ?>

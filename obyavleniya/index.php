@@ -36,7 +36,9 @@ $APPLICATION->SetTitle("Объявления");
 			4 => "ATT_SQUARE",
 			5 => "ATT_DEAL",
 			6 => "ATT_PRICE",
-			7 => "",
+			7 => "ATT_GALLERY",
+			8 => "ATT_ADDITIONAL",
+			9 => "ORIGINAL_NAME",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
@@ -95,11 +97,11 @@ $APPLICATION->SetTitle("Объявления");
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
 		"COMPONENT_TEMPLATE" => "template3",
-		"SEF_FOLDER" => "/obyavleniya/",
+		"SEF_FOLDER" => "/advertisement/",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
-			"detail" => "#ELEMENT_CODE#/",
+			"detail" => "#ELEMENT_ID#/",
 		)
 	),
 	false

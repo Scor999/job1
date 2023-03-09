@@ -16,6 +16,7 @@ $this->setFrameMode(true);
 	"bitrix:news.detail",
 	"",
 	Array(
+		"ORIGINAL_NAME" => $arParams["ORIGINAL_NAME"],
 		"DISPLAY_DATE" => $arParams["DISPLAY_DATE"],
 		"DISPLAY_NAME" => $arParams["DISPLAY_NAME"],
 		"DISPLAY_PICTURE" => $arParams["DISPLAY_PICTURE"],

@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001678265161';
-$dateexpire = '001678265461';
-$ser_content = 'a:2:{s:7:"CONTENT";s:3224:"
+$datecreate = '001678370765';
+$dateexpire = '001678371065';
+$ser_content = 'a:2:{s:7:"CONTENT";s:3312:"
 <div class="site-section bg-light">
   <div class="container">
     <div class="row justify-content-center mb-5">
@@ -17,15 +17,15 @@ $ser_content = 'a:2:{s:7:"CONTENT";s:3224:"
               
         <div id="bx_3997782468_47" class="col-md-6 col-lg-4 mb-5" data-aos="fade-up"
           data-aos-delay="100">
-          <a href="/news/47/"><img src="/upload/iblock/e90/3dtsr1hahqyqd14n3l43scv46w991sjh.jpg" alt="Image"
+          <a href="/news/47/obyavlenie%20dom%20po%20sutochno222/"><img src="/upload/iblock/e90/3dtsr1hahqyqd14n3l43scv46w991sjh.jpg" alt="Image"
               class="img-fluid"></a>
           <div class="p-4 bg-white">
             <span class="d-block text-secondary small text-uppercase">
               07.03.2023            </span>
-            <h2 class="h5 text-black mb-3"><a href="/news/47/">
+            <h2 class="h5 text-black mb-3"><a href="/news/47/obyavlenie%20dom%20po%20sutochno222/">
                 Объявление дом по суточно222              </a></h2>
             <p>
-                          </p>
+              ПРОВЕРКА            </p>
           </div>
         </div>
               
@@ -58,6 +58,6 @@ $ser_content = 'a:2:{s:7:"CONTENT";s:3224:"
         </div>
           </div>
   </div>
-</div>";s:4:"VARS";a:2:{s:8:"arResult";a:1:{s:19:"LAST_ITEM_IBLOCK_ID";s:1:"1";}s:18:"templateCachedData";a:3:{s:13:"additionalCSS";s:69:"/local/templates/home/components/bitrix/news.line/Our_blog1/style.css";s:9:"frameMode";b:1;s:13:"__editButtons";a:6:{i:0;a:5:{i:0;s:13:"AddEditAction";i:1;s:2:"47";i:2;s:168:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=1&type=news&ID=47&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F%3Fclear_cache%3DY";i:3;s:31:"Изменить новость";i:4;a:0:{}}i:1;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:2:"47";i:2;s:121:"/bitrix/admin/iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&action=delete&ID=47&return_url=%2F%3Fclear_cache%3DY";i:3;s:29:"Удалить новость";i:4;a:1:{s:7:"CONFIRM";s:123:"Будет удалена вся информация, связанная с этой записью. Продолжить?";}}i:2;a:5:{i:0;s:13:"AddEditAction";i:1;s:1:"3";i:2;s:167:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=1&type=news&ID=3&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F%3Fclear_cache%3DY";i:3;s:31:"Изменить новость";i:4;a:0:{}}i:3;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:1:"3";i:2;s:120:"/bitrix/admin/iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&action=delete&ID=3&return_url=%2F%3Fclear_cache%3DY";i:3;s:29:"Удалить новость";i:4;a:1:{s:7:"CONFIRM";s:123:"Будет удалена вся информация, связанная с этой записью. Продолжить?";}}i:4;a:5:{i:0;s:13:"AddEditAction";i:1;s:1:"2";i:2;s:167:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=1&type=news&ID=2&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F%3Fclear_cache%3DY";i:3;s:31:"Изменить новость";i:4;a:0:{}}i:5;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:1:"2";i:2;s:120:"/bitrix/admin/iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&action=delete&ID=2&return_url=%2F%3Fclear_cache%3DY";i:3;s:29:"Удалить новость";i:4;a:1:{s:7:"CONFIRM";s:123:"Будет удалена вся информация, связанная с этой записью. Продолжить?";}}}}}}';
+</div>";s:4:"VARS";a:2:{s:8:"arResult";a:1:{s:19:"LAST_ITEM_IBLOCK_ID";s:1:"1";}s:18:"templateCachedData";a:3:{s:13:"additionalCSS";s:69:"/local/templates/home/components/bitrix/news.line/Our_blog1/style.css";s:9:"frameMode";b:1;s:13:"__editButtons";a:6:{i:0;a:5:{i:0;s:13:"AddEditAction";i:1;s:2:"47";i:2;s:150:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=1&type=news&ID=47&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F";i:3;s:31:"Изменить новость";i:4;a:0:{}}i:1;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:2:"47";i:2;s:103:"/bitrix/admin/iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&action=delete&ID=47&return_url=%2F";i:3;s:29:"Удалить новость";i:4;a:1:{s:7:"CONFIRM";s:123:"Будет удалена вся информация, связанная с этой записью. Продолжить?";}}i:2;a:5:{i:0;s:13:"AddEditAction";i:1;s:1:"3";i:2;s:149:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=1&type=news&ID=3&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F";i:3;s:31:"Изменить новость";i:4;a:0:{}}i:3;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:1:"3";i:2;s:102:"/bitrix/admin/iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&action=delete&ID=3&return_url=%2F";i:3;s:29:"Удалить новость";i:4;a:1:{s:7:"CONFIRM";s:123:"Будет удалена вся информация, связанная с этой записью. Продолжить?";}}i:4;a:5:{i:0;s:13:"AddEditAction";i:1;s:1:"2";i:2;s:149:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=1&type=news&ID=2&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F";i:3;s:31:"Изменить новость";i:4;a:0:{}}i:5;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:1:"2";i:2;s:102:"/bitrix/admin/iblock_element_admin.php?IBLOCK_ID=1&type=news&lang=ru&action=delete&ID=2&return_url=%2F";i:3;s:29:"Удалить новость";i:4;a:1:{s:7:"CONFIRM";s:123:"Будет удалена вся информация, связанная с этой записью. Продолжить?";}}}}}}';
 return true;
 ?>

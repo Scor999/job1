@@ -1,7 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мои объявления");
-?>Мои объявления.<?$APPLICATION->IncludeComponent(
+$GLOBALS['UserFilter'] = ['CREATED_BY' => $GLOBALS['USER']->GetID()];
+?>Мои объявления.
+<?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
 	"template3", 
 	array(
@@ -40,7 +42,7 @@ $APPLICATION->SetTitle("Мои объявления");
 			0 => "CREATED_USER_NAME",
 			1 => "",
 		),
-		"FILTER_NAME" => "",
+		"FILTER_NAME" => "UserFilter",
 		"FILTER_PROPERTY_CODE" => array(
 			0 => "",
 			1 => "",
@@ -61,7 +63,7 @@ $APPLICATION->SetTitle("Мои объявления");
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
-		"NEWS_COUNT" => "20",
+		"NEWS_COUNT" => "3",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",

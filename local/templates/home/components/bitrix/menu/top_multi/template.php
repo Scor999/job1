@@ -43,5 +43,5 @@ foreach($arResult as $arItem):?>
 <?endif?>
 
 </ul>
-</nav>
+
 <?endif?>

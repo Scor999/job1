@@ -22,14 +22,14 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Личный кабинет продавца", 
+		"Кабинет продавца", 
 		"/lichnyy-kabinet-prodavtsa/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Личный кабинет покупателя", 
+		"Кабинет покупателя", 
 		"/lichnyy-kabinet-pokupatelya/", 
 		Array(), 
 		Array(), 

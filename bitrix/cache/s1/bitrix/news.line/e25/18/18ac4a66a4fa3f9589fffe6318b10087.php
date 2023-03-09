@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001678265967';
-$dateexpire = '001678266267';
+$datecreate = '001678371387';
+$dateexpire = '001678371687';
 $ser_content = 'a:2:{s:7:"CONTENT";s:1019:"
 <div class="row">
 	    <div class="col-md-6 col-lg-4 mb-4" id="bx_2572050770_42">

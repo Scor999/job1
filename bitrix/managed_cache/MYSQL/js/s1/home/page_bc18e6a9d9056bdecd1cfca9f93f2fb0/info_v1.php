@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/components/bitrix/catalog.section/templates/.default/script.js" => "16763712825563","/bitrix/components/bitrix/catalog.item/templates/.default/script.js" => "167637693641322",]; ?>
