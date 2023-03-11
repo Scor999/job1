@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001678371084';
-$dateexpire = '001678371384';
+$datecreate = '001678489485';
+$dateexpire = '001678489785';
 $ser_content = 'a:2:{s:7:"CONTENT";s:3312:"
 <div class="site-section bg-light">
   <div class="container">

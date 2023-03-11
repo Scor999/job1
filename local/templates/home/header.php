@@ -38,7 +38,7 @@ IncludeTemplateLangFile(__FILE__);
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH ."/js/aos.js");
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH ."/js/main.js");
   ?>
-<!DOCTYPE html>
+
 <html lang="<?= LANGUAGE_ID ?>">
 <head>
     <title><?$APPLICATION->ShowTitle()?></title>
@@ -91,8 +91,9 @@ IncludeTemplateLangFile(__FILE__);
                                        "PATH" => "/local/templates/home/include/email.php",
                                         ),
                             ); ?>
-						</p>
+
 				</div>
+				</p>
           </div>
           <div class="col-6 col-md-6 text-right">
 					  <? $APPLICATION->IncludeComponent(
@@ -107,22 +108,21 @@ IncludeTemplateLangFile(__FILE__);
 	         ); ?>
 			</div>
           </div>
-<? if (!$GLOBALS['USER']->IsAuthorized()): ?>
-          <div class="row flex-row-reverse"><a class="btn btn-sm" href="/auth">Войти</a></div>
-        <? else: ?>
-          <div class="row flex-row-reverse"><a class="btn btn-sm" href="<? echo $APPLICATION->GetCurPageParam(
-            "logout=yes&" . bitrix_sessid_get(),
-            array(
-              "login",
-              "logout",
-              "register",
-              "forgot_password",
-              "change_password"
-            )
-          ); ?>">Выйти</a></div>
-        <? endif; ?>
+<div class="d-none d-md-inline-block ml-2">
+<? $APPLICATION->IncludeComponent(
+	             "bitrix:main.include",
+                 "",
+	             array(
+		                "AREA_FILE_SHOW" => "file",
+	                    "AREA_FILE_SUFFIX" => "inc",
+		                "EDIT_TEMPLATE" => "",
+	                    "PATH" => "/local/templates/home/include/logout.php",
+	                                                            	),
+	         ); ?>
+
         </div>
-      </div>
+		</div>
+
 	 <div class="site-navbar">
       <div class="container py-1">
         <div class="row align-items-center">

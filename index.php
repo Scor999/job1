@@ -1,14 +1,12 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Биржа недвижимости");
-?><? 
+
 $GLOBALS['priorityFilter'] = ['!PROPERTY_ATT_DEAL' => false];
-?>
-<?
 $APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"new.list1", 
-	array(
+	"bitrix:news.list",
+	"new.list1",
+	Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
@@ -21,6 +19,7 @@ $APPLICATION->IncludeComponent(
 		"CACHE_TIME" => "86400",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
+		"COMPONENT_TEMPLATE" => "new.list1",
 		"DETAIL_URL" => "",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
@@ -28,12 +27,7 @@ $APPLICATION->IncludeComponent(
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-			2 => "",
-		),
-                "USE_FILTER" => "Y",
+		"FIELD_CODE" => array(0=>"",1=>"",2=>"",),
 		"FILTER_NAME" => "priorityFilter",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "5",
@@ -52,11 +46,7 @@ $APPLICATION->IncludeComponent(
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(
-			0 => "ATT_DEAL",
-			1 => "ATT_PRICE",
-			2 => "",
-		),
+		"PROPERTY_CODE" => array(0=>"ATT_DEAL",1=>"ATT_PRICE",2=>"",),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "Y",
@@ -69,11 +59,9 @@ $APPLICATION->IncludeComponent(
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
-		"COMPONENT_TEMPLATE" => "new.list1"
-	),
-	false
-);
-?>
+		"USE_FILTER" => "Y"
+	)
+);?>
 <div class="py-5">
 	<div class="container">
 		<div class="row">
@@ -116,6 +104,16 @@ $APPLICATION->IncludeComponent(
 		</div>
 	</div>
 </div>
+ <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "page",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => ""
+	)
+);?>
 <div class="site-section site-section-sm bg-light">
 	<div class="container">
 		<div class="row mb-5">
@@ -207,7 +205,7 @@ $APPLICATION->IncludeComponent(
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC"
 	)
-);?><br>
+);?>
 	</div>
 </div>
-<br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
